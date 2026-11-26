@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>할 일 목록</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <h1>할 일 목록</h1>
+
+    <form id="new-todo-form" class="new-todo" autocomplete="off">
+      <input id="new-todo-input" type="text" placeholder="할 일을 입력하고 Enter" maxlength="200" aria-label="새 할 일">
+      <button type="submit">추가</button>
+    </form>
+
+    <div class="toolbar">
+      <label class="toggle-all">
+        <input id="toggle-all" type="checkbox"> 모두 완료
+      </label>
+      <div class="filters" role="tablist">
+        <button type="button" data-filter="all" class="active">전체</button>
+        <button type="button" data-filter="active">진행 중</button>
+        <button type="button" data-filter="completed">완료</button>
+      </div>
+    </div>
+
+    <ul id="todo-list" class="todo-list"></ul>
+    <p id="empty-message" class="empty">할 일이 없습니다.</p>
+
+    <footer class="footer">
+      <span id="todo-count"></span>
+      <button id="clear-completed" type="button">완료 항목 삭제</button>
+    </footer>
+
+    <p class="hint">항목을 더블클릭하면 수정할 수 있습니다.</p>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
