@@ -14,5 +14,6 @@ A dependency-free TODO web app (vanilla HTML/CSS/JS) in the `todo/` folder. Ther
 
 ## Repository
 
-- Remote: private GitHub repository `jundanny/caludeStudy` (`origin`, default branch `main`).
+- Remote: public GitHub repository `jundanny/caludeStudy` (`origin`, default branch `main`).
+- Deployed with GitHub Pages from the `main` branch root (no build; `.nojekyll` disables Jekyll). Pushing to `main` redeploys. The root `index.html` only redirects to `todo/`; the app lives at https://jundanny.github.io/caludeStudy/todo/.
 - Environment: Windows, PowerShell 5.1. GitHub CLI is installed at `C:\Program Files\GitHub CLI\gh.exe` and authenticated.
